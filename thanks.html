@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Hope</title>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/app.css"/>
+
+</head>
+<body>
+
+
+<style>
+
+
+    .main-banner {
+        position: relative;
+        background-color: #f4f4f4
+    }
+
+    .main-banner-bg, .swiper-main-bg {
+        height: 100%
+    }
+
+    .main-banner-bg video {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%)
+    }
+
+    .main-banner-bg:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent url(//www.floorbest.com.ua/wp-content/themes/floorbest/img/top-overlay.png) no-repeat bottom right;
+        background-size: contain
+    }
+
+    .swiper-main-bg .swiper-button-prev {
+        top: auto;
+        bottom: 80px;
+        left: auto;
+        right: 310px
+    }
+
+    .swiper-main-bg .swiper-button-next {
+        top: auto;
+        bottom: 80px;
+        right: 230px
+    }
+
+    .swiper-main-bg .swiper-pagination {
+        display: inline-block;
+        position: absolute;
+        right: 460px;
+        bottom: 90px;
+        color: #fff;
+        font-size: 40px;
+        left: auto;
+        width: auto
+    }
+
+    .zero-total, .swiper-pagination-total {
+        font-size: 21px;
+        line-height: 1;
+        vertical-align: top;
+        color: rgba(255, 255, 255, .7)
+    }
+
+    .zero-total {
+        padding-left: 3px
+    }
+
+    .swiper-main-bg.swiper-entry {
+        position: absolute
+    }
+
+    .swiper-main-text {
+        vertical-align: bottom;
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 50px
+    }
+
+    .swiper-main-text .swiper-entry {
+        background-color: #fff;
+        width: 680px;
+        z-index: 1
+    }
+
+    .main-banner-text {
+        position: relative;
+        background-color: #fff;
+        padding: 50px 70px;
+        width: 680px;
+        height: 390px;
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .main-banner-text .styled-title .h1 {
+        display: -webkit-box;
+        min-height: auto !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 98px
+    }
+
+    .main-banner-text article p {
+        display: -webkit-box;
+        min-height: auto !important;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 81px
+    }
+
+    @media (max-width: 1689px) {
+        .swiper-main-bg .swiper-button-next {
+            bottom: 50px;
+            right: 160px
+        }
+
+        .swiper-main-bg .swiper-button-prev {
+            bottom: 50px;
+            right: 240px
+        }
+
+        .swiper-main-bg .swiper-pagination {
+            right: 360px;
+            bottom: 60px
+        }
+    }
+
+    @media (max-width: 1469px) {
+        .swiper-main-bg .swiper-button-next {
+            right: 120px
+        }
+
+        .swiper-main-bg .swiper-button-prev {
+            right: 200px
+        }
+
+        .swiper-main-bg .swiper-pagination {
+            right: 320px
+        }
+
+        .main-banner-text {
+            height: 350px
+        }
+
+        .main-banner-text {
+            padding: 30px 50px
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .swiper-main-bg .swiper-pagination {
+            right: 120px;
+            bottom: 140px
+        }
+    }
+
+    @media (max-width: 991px) {
+        .swiper-main-text {
+            height: 750px
+        }
+
+        .swiper-main-text {
+            padding-bottom: 100px;
+            width: 100%
+        }
+
+        .swiper-main-text .swiper-entry {
+            width: 100%
+        }
+
+        .main-banner-text {
+            width: 100%
+        }
+
+        .swiper-main-text-wrap {
+            display: table;
+            table-layout: fixed;
+            width: 100%
+        }
+
+        .swiper-main-bg .swiper-button-next {
+            right: 50%;
+            bottom: 20px;
+            margin-right: -180px
+        }
+
+        .swiper-main-bg .swiper-button-prev {
+            right: 50%;
+            margin-right: 120px;
+            bottom: 20px
+        }
+
+        .swiper-main-bg .swiper-pagination {
+            bottom: 30px;
+            right: 50%;
+            margin-right: -45px
+        }
+
+        .main-banner-bg video {
+            display: none
+        }
+    }
+
+    @media (max-width: 767px) {
+        .swiper-main-bg.swiper-entry {
+            position: relative;
+            height: 300px
+        }
+
+        .swiper-main-text-wrap {
+            display: block
+        }
+
+        .swiper-main-text {
+            height: auto;
+            display: block;
+            width: 100%;
+            padding: 0
+        }
+
+        .swiper-main-text .swiper-entry {
+            width: auto;
+            margin-left: -15px;
+            margin-right: -15px
+        }
+
+        .main-banner-text {
+            display: block;
+            height: auto;
+            width: 100%;
+            padding: 30px 15px 0
+        }
+
+        .main-banner-text .styled-title .h1 {
+            max-height: unset;
+            display: block
+        }
+
+        .main-banner-text article p {
+            max-height: unset;
+            display: block
+        }
+
+        .swiper-main-bg .swiper-pagination {
+            right: auto;
+            left: 15px;
+            bottom: 15px;
+            font-size: 30px
+        }
+
+        .zero-total, .swiper-pagination-total {
+            font-size: 18px
+        }
+    }
+
+
+</style>
+<div id="loader-wrapper"></div>
+
+<header class="header">
+    <div class="header-main container d-flex align-middle align-justify">
+        <a href="index.html" class="header-logo align-middle">
+            <img src="assets/img/logo.svg" alt="logo company" class="header-logo__icon">
+        </a>
+
+        <div class="burger__wrap js-header align-middle align-center">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li class="menu-item  current-menu-item">
+                        <a href="about.html">Про нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="blog.html">Новини</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="opportunities.html">Можливості</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="projects.html">Проєкти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lang__wrap --relative">
+                <div class="lang__current">
+                    <a href="/uk/">Ukr</a><!--поточна мова-->
+                </div>
+
+                <ul class="lang">
+                    <li class="lang-item"><a href="">Ukr</a>
+                    </li>
+                    <li class="lang-item "><a href="">Eng</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <a href="" class="btn btn-primary header-btn d-block text-center text-uppercase text-bold open-popup"
+               data-rel="more">Задонатити</a>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <section class="other-page thanks d-flex align-middle">
+        <div class="container">
+            <div class="row align-center text-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="other-page__content text-center --relative">
+                        <div class="other-page__title overlap heading-font text-uppercase">
+                            Дякую!
+                        </div>
+                        <div class="other-page__description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </div>
+                        <div class="">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="other-page__content text-center --relative">
+                        <img src="assets/img/thanks.png" class="other-page__img" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container ">
+        <div class="row footer__content">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/img/logo.svg" alt="logo company" class="footer-logo__icon">
+                </a>
+                <div class="footer-logo__desc text-light">If you have any questions, please don’t hesitate to contact
+                    us
+                </div>
+            </div>
+
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 d-flex align-center">
+                <div>
+                    <ul class="contacts__list">
+                        <li class="contacts__list--item">
+                            <span class="text-bold"> Email:</span><a
+                                href="mailto:charitablefoundationhope.ua@gmail.com">charitablefoundationhope.ua@gmail.com</a>
+                        </li>
+                        <li class="contacts__list--item">
+                            <span class="text-bold">Phone:</span><a href="tel:+380673265205">+380 (67) 326 52 05</a>
+                        </li>
+                        <li class="contacts__list--item">
+                            <span class="text-bold">Registered Charity:</span> USREOU 44681121
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex align-right">
+                <div class="footer__content--col">
+                    <ul class="social__list ">
+                        <li class="social__item">
+                            <a href="" target="_blank" class="social__link d-flex align-middle align-center">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" target="_blank" class="social__link d-flex align-middle align-center">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" target="_blank" class="social__link d-flex align-middle align-center">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul class="card-list d-flex align-middle">
+                        <li>
+                            <img src="assets/img/card1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/card2.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__copyright --relative">
+            <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12 col-xs-12 ">
+                <div class="footer__copyright--text ">Development by
+                    <a href="" target="_blank">WebTune</a></div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 col-xs-12 ">
+                <ul class="menu d-flex  align-justify">
+                    <li class="menu-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Offer Agreement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/js_app.min.js"></script>
+
+
+</body>
+</html>
