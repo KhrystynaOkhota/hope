@@ -17,268 +17,6 @@
 <body>
 
 
-<style>
-
-
-    .main-banner {
-        position: relative;
-        background-color: #f4f4f4
-    }
-
-    .main-banner-bg, .swiper-main-bg {
-        height: 100%
-    }
-
-    .main-banner-bg video {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%)
-    }
-
-    .main-banner-bg:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent url(//www.floorbest.com.ua/wp-content/themes/floorbest/img/top-overlay.png) no-repeat bottom right;
-        background-size: contain
-    }
-
-    .swiper-main-bg .swiper-button-prev {
-        top: auto;
-        bottom: 80px;
-        left: auto;
-        right: 310px
-    }
-
-    .swiper-main-bg .swiper-button-next {
-        top: auto;
-        bottom: 80px;
-        right: 230px
-    }
-
-    .swiper-main-bg .swiper-pagination {
-        display: inline-block;
-        position: absolute;
-        right: 460px;
-        bottom: 90px;
-        color: #fff;
-        font-size: 40px;
-        left: auto;
-        width: auto
-    }
-
-    .zero-total, .swiper-pagination-total {
-        font-size: 21px;
-        line-height: 1;
-        vertical-align: top;
-        color: rgba(255, 255, 255, .7)
-    }
-
-    .zero-total {
-        padding-left: 3px
-    }
-
-    .swiper-main-bg.swiper-entry {
-        position: absolute
-    }
-
-    .swiper-main-text {
-        vertical-align: bottom;
-        height: 100vh;
-        padding-top: 100px;
-        padding-bottom: 50px
-    }
-
-    .swiper-main-text .swiper-entry {
-        background-color: #fff;
-        width: 680px;
-        z-index: 1
-    }
-
-    .main-banner-text {
-        position: relative;
-        background-color: #fff;
-        padding: 50px 70px;
-        width: 680px;
-        height: 390px;
-        display: table-cell;
-        vertical-align: middle
-    }
-
-    .main-banner-text .styled-title .h1 {
-        display: -webkit-box;
-        min-height: auto !important;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        max-height: 98px
-    }
-
-    .main-banner-text article p {
-        display: -webkit-box;
-        min-height: auto !important;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        max-height: 81px
-    }
-
-    @media (max-width: 1689px) {
-        .swiper-main-bg .swiper-button-next {
-            bottom: 50px;
-            right: 160px
-        }
-
-        .swiper-main-bg .swiper-button-prev {
-            bottom: 50px;
-            right: 240px
-        }
-
-        .swiper-main-bg .swiper-pagination {
-            right: 360px;
-            bottom: 60px
-        }
-    }
-
-    @media (max-width: 1469px) {
-        .swiper-main-bg .swiper-button-next {
-            right: 120px
-        }
-
-        .swiper-main-bg .swiper-button-prev {
-            right: 200px
-        }
-
-        .swiper-main-bg .swiper-pagination {
-            right: 320px
-        }
-
-        .main-banner-text {
-            height: 350px
-        }
-
-        .main-banner-text {
-            padding: 30px 50px
-        }
-    }
-
-    @media (max-width: 1199px) {
-        .swiper-main-bg .swiper-pagination {
-            right: 120px;
-            bottom: 140px
-        }
-    }
-
-    @media (max-width: 991px) {
-        .swiper-main-text {
-            height: 750px
-        }
-
-        .swiper-main-text {
-            padding-bottom: 100px;
-            width: 100%
-        }
-
-        .swiper-main-text .swiper-entry {
-            width: 100%
-        }
-
-        .main-banner-text {
-            width: 100%
-        }
-
-        .swiper-main-text-wrap {
-            display: table;
-            table-layout: fixed;
-            width: 100%
-        }
-
-        .swiper-main-bg .swiper-button-next {
-            right: 50%;
-            bottom: 20px;
-            margin-right: -180px
-        }
-
-        .swiper-main-bg .swiper-button-prev {
-            right: 50%;
-            margin-right: 120px;
-            bottom: 20px
-        }
-
-        .swiper-main-bg .swiper-pagination {
-            bottom: 30px;
-            right: 50%;
-            margin-right: -45px
-        }
-
-        .main-banner-bg video {
-            display: none
-        }
-    }
-
-    @media (max-width: 767px) {
-        .swiper-main-bg.swiper-entry {
-            position: relative;
-            height: 300px
-        }
-
-        .swiper-main-text-wrap {
-            display: block
-        }
-
-        .swiper-main-text {
-            height: auto;
-            display: block;
-            width: 100%;
-            padding: 0
-        }
-
-        .swiper-main-text .swiper-entry {
-            width: auto;
-            margin-left: -15px;
-            margin-right: -15px
-        }
-
-        .main-banner-text {
-            display: block;
-            height: auto;
-            width: 100%;
-            padding: 30px 15px 0
-        }
-
-        .main-banner-text .styled-title .h1 {
-            max-height: unset;
-            display: block
-        }
-
-        .main-banner-text article p {
-            max-height: unset;
-            display: block
-        }
-
-        .swiper-main-bg .swiper-pagination {
-            right: auto;
-            left: 15px;
-            bottom: 15px;
-            font-size: 30px
-        }
-
-        .zero-total, .swiper-pagination-total {
-            font-size: 18px
-        }
-    }
-
-
-</style>
 <div id="loader-wrapper"></div>
 
 <header class="header">
@@ -445,85 +183,94 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 --relative">
 
-                    <img src="assets/img/goal-decor.svg" alt="" class="s-goal__decor">
-                    <div class="s-goal__wrap">
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+
+                    <div class="s-goal__wrap --relative">
+                        <img src="assets/img/goal-1.svg" alt="" class="s-goal__decor--top">
+                        <img src="assets/img/goal-2.svg" alt="" class="s-goal__decor--bottom">
+                       <!-- <img src="assets/img/goal-decor.svg" alt="" class="s-goal__decor">-->
+
+                        <svg width="1033" height="378" viewBox="0 0 1033 378" fill="none" xmlns="http://www.w3.org/2000/svg" class="s-goal__decor">
+                            <path d="M26.1573 377C26.1573 377 47.7203 335.651 102.528 335.651C157.335 335.651 898.577 335.651 922.835 335.651C947.094 335.651 1032 322.167 1032 226.435C1032 130.703 939.008 117.22 922.835 117.22C906.663 117.22 123.193 117.22 102.528 117.22C81.8626 117.22 1 98.3428 1 0.363281" stroke="#DADADA"/>
+                        </svg>
+
+
+
+                        <div class="s-goal__row">
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+                                    <div class="s-goal__text"><span>25 000</span>
+                                        наша мета
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="s-goal__col">
-                            <div class="s-goal__item align-middle">
-                                <span class="s-goal__icon"></span>
-                                <div class="s-goal__text">24 500
-                                    дітей
+                            <div class="s-goal__col">
+                                <div class="s-goal__item align-middle">
+
+                                    <div class="s-goal__text"><span>24 500</span>
+                                        дітей
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -602,12 +349,31 @@
                             <div class="swiper-slide">
                                 <div class="number-item text-center">
 
-                                    <div class="number-item__img--wrap d-flex align-center align-middle">
+                                    <div class="number-item__img--wrap d-flex align-center align-middle --relative">
+                                        <span class="line"></span>
                                         <img src="assets/img/1.svg" alt="" class="number-item__img">
                                     </div>
 
                                     <div class="number-item__count text-bold d-flex align-end align-center">
                                         8,5млн $+
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="280" height="299"
+                                             viewBox="0 0 280 299" fill="none">
+                                            <g filter="url(#filter0_f_1_95)">
+                                                <ellipse cx="140.5" cy="149.5" rx="83.5" ry="49.5" fill="#FFBB00"/>
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_f_1_95" x="-43" y="0" width="367" height="299"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                             result="shape"/>
+                                                    <feGaussianBlur stdDeviation="50"
+                                                                    result="effect1_foregroundBlur_1_95"/>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+
                                     </div>
 
                                     <div class="number-item__title text-light">
