@@ -75,29 +75,32 @@
 
 <main class="main">
 
-    <section class="banner-video">
-        <div class="container-fluid p-0">
+    <section class="banner-video --relative preload-entry">
+        <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 --relative">
                     <div class="preload__wrap">
                         <video class="video" muted="" loop="">
-                            <source src="https://video.wixstatic.com/video/eaef95_c0230aa6601147b1ae084960f343897e/1080p/mp4/file.mp4" type="video/mp4">
+                            <source src="https://video.wixstatic.com/video/eaef95_c0230aa6601147b1ae084960f343897e/1080p/mp4/file.mp4"
+                                    type="video/mp4">
                             <source src="" type="video/webm">
                             <source src="" type="video/ogv">
                         </video>
                         <div class="preload">
                             <img src="./assets/img/video.png" class="preload__img" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130" fill="none" class="preload__btn btn-play">
-                                <circle opacity="0.2" cx="65" cy="65" r="65" fill="white"></circle>
-                                <circle opacity="0.2" cx="65" cy="65" r="50" fill="white"></circle>
-                                <circle cx="65.5" cy="65.5" r="34.5" fill="white"></circle>
-                                <path d="M57.5294 51.6174C55.028 50.1694 53 51.3556 53 54.2648V75.7331C53 78.6452 55.028 79.8299 57.5294 78.3833L76.1233 67.622C78.6256 66.1735 78.6256 63.8267 76.1233 62.3785L57.5294 51.6174Z" fill="#48588A"></path>
-                            </svg>
                         </div>
                     </div>
+
+                    <a class="btn-pulse preload__btn">
+                        <img src="assets/img/play.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!--<div class="pulse-box">
+            <div class="pulse-css"></div>
+        </div>-->
 
     </section>
 
@@ -122,60 +125,144 @@
         </div>
     </section>
 
-    <section class="animation section s-thanks">
+    <section class="section s-award">
         <div class="container ">
             <div class="swiper-entry">
                 <div class="row">
 
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
                         <div class="swiper-container"
-                             data-options='{"slidesPerView":2, "spaceBetween": 15, "speed": 1200, "centeredSlides": false, "loop": true, "breakpoints": {"575": {"slidesPerView": 3.2,"spaceBetween": 15, "autoHeight": false}, "992": {"slidesPerView": 4.2, "spaceBetween": 20}, "1200": {"slidesPerView": 4.5, "spaceBetween": 20}}}'>
+                             data-options='{"slidesPerView":1.2, "spaceBetween": 15, "speed": 1200, "centeredSlides": false, "loop": true, "breakpoints": {"575": {"slidesPerView": 3.2,"spaceBetween": 15, "autoHeight": false}, "992": {"slidesPerView": 4.2, "spaceBetween": 20}, "1200": {"slidesPerView": 4.5, "spaceBetween": 20}}}'>
 
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-2.jpg" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks-1.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-2.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks-2.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-3.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks-2.jpg" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-1.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/thanks.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-2.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/events-2.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="s-thanks__img-wrap">
-                                        <img src="assets/img/thanks-3.png" alt="" class="s-thanks__img">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/blog-4.jpeg" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award__card --relative">
+                                        <div class="award__img-wrap">
+                                            <img src="assets/img/events-3.png" alt="" class="award__img">
+                                        </div>
+                                        <div class="award__content d-flex align-middle align-center">
+                                            <div class="editor-style"><p>Відзнака Міністерства оборони України нагрудний
+                                                знак</p>
+                                                <p><em>"Знак пошани" - нагороджено Федоренка Маркіяна Сергійовича</em>
+                                                </p> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="row">
@@ -343,9 +430,9 @@
                         </div>
 
                         <ul class="s-team__contacts mb-20">
-                            <li>
-                                <a href="mailto:marichkakyluk1802@gmail.com" class="text-l text-light">marichkakyluk1802@gmail.com</a>
-                            </li>
+                            <!-- <li>
+                                 <a href="mailto:marichkakyluk1802@gmail.com" class="text-l text-light">marichkakyluk1802@gmail.com</a>
+                             </li>-->
                             <li>
                                 <a href="tel:+380982312353" class="text-l text-light"> 38 (098) 231-23-53</a>
                             </li>
@@ -363,43 +450,6 @@
                 </div>
 
             </div>
-            <div class="row s-team__item align-middle --relative">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                    <div class="s-team__img-wrap">
-                        <img src="https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_960_720.jpg"
-                             class="s-team__img" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                    <div class="s-team__info ">
-                        <div class="s-team__name text-bold mb-20">
-                            test test
-                        </div>
-                        <div class="s-team__position text-m text-light mb-20">
-                            test test test test test test
-                        </div>
-
-                        <ul class="s-team__contacts mb-20">
-                            <li>
-                                <a href="mailto:marichkakyluk1802@gmail.com" class="text-m text-light"> test test</a>
-                            </li>
-                            <li>
-                                <a href="tel:+380982312353" class="text-m text-light">24356789</a>
-                            </li>
-                        </ul>
-
-                        <div class="s-team__ mb-20 text-m text-light">
-                            test test
-                        </div>
-                        <div class="s-team__text text-m text-light">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="row align-center">
                 <div class="col-xl-6 col-lg-7 col-md-8 col-sm-12 col-xs-12 text-center">
@@ -416,70 +466,81 @@
 
 
                     <div class="s-timeline__wrap --relative">
-                        <img src="assets/img/goal-1.svg" alt="" class="s-timeline__decor--top">
+                        <img src="assets/img/goal-1-yellow.svg" alt="" class="s-timeline__decor--top">
                         <img src="assets/img/goal-2.svg" alt="" class="s-timeline__decor--bottom">
 
-
+                        <svg width="2182" height="963" viewBox="0 0 2182 963" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54.1939 962C54.1939 962 99.7879 856.387 215.675 856.387C331.563 856.387 1898.88 856.387 1950.18 856.387C2001.47 856.387 2181 821.948 2181 577.43C2181 332.912 1984.37 298.473 1950.18 298.473C1915.98 298.473 259.371 298.473 215.675 298.473C171.98 298.473 1 250.258 1 0" stroke="red"/>
+                        </svg>
                         <div class="s-timeline__row">
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">9День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">8День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">7День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">6День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">5День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">4День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">3День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">2День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
                             </div>
                             <div class="s-timeline__col">
                                 <div class="s-timeline__item align-middle">
-                                    <div class="s-timeline__text text-bold"><span class="text-light">День заснування</span>
+                                    <div class="s-timeline__text text-bold"><span
+                                            class="text-light">1День заснування</span>
                                         5 липня 2022
                                     </div>
                                 </div>
@@ -626,6 +687,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-button__wrap d-flex d-md-none align-middle align-right">
                         <div class="swiper-button-prev d-md-flex align-center align-middle">
                             <i class="icon-arrow-left"></i>
@@ -639,12 +701,15 @@
         </div>
     </section>
 
-    <section class="s-default">
+    <section class="s-info">
         <div class="container">
-            <div class="row align-center align-middle --relative">
+            <div class="row align-center align-middle --relative s-info__row">
+                <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="--relative d-inline-block d-md-none">
+                        <h3 class="s-info__heading text-bold text-xl">Наша мета</h3>
+                    </div>
 
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <div class="s-lr__content editor-style">
+                    <div class="s-info__desc editor-style">
                         <p>Відповідно до Указу Президента України № 850/2022 про нагородження нагрудним знаком
                             Президента
                             України <b>«Золоте серце»</b> за вагомий особистий внесок у надання волонтерської допомоги
@@ -657,42 +722,74 @@
                             фонд «НOPE UA»</p>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 --relative">
-
-                    <h4 class="s-lr__heading text-bold text-xl block-info__heading overlap text-center"> Наша мета</h4>
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xs-12 --relative">
+                    <div class="s-info__heading-wrap --relative d-none d-md-inline-block">
+                        <h4 class="s-info__heading text-bold text-xl block-info__heading overlap"> Наша
+                            мета</h4>
                         <img src="assets/img/decor-top-right.svg"
-                             class="decor__right-top" alt="">
+                             class="decor__right" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="row m-row align-center align-middle s-info__row ">
+                <div class="column col-xl-8 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="--relative d-inline-block d-md-none">
+                        <h3 class="s-info__heading text-bold text-xl">Чого<br>
+                            ми прагнем</h3>
+                        <img src="assets/img/logo-large.svg" class="decor__right" alt="">
+                    </div>
 
-    <section class="s-default">
-        <div class="container">
-            <div class="row m-row align-center align-middle">
-
-                <div class="column col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 --relative">
-
-                    <h4 class="text-bold text-xl block-info__heading">Чого
-                        ми прагнем</h4>
-
-                    <img src="assets/img/logo-large.svg" class="decor__logo" alt="">
-
-                </div>
-                <div class="column col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <div class="s-lr__content editor-style">
+                    <div class="s-info__desc editor-style">
                         <p><b> «Без Обмежень»</b> — український гурт @bezobmezhen став першим амбасадором Hope UA.</p>
 
                         <p>Наша команда разом із гуртом @bezobmezhen зробили десятки поїздок на Схід із роздачею
                             гуманітарної допомоги, орнаізовували благодійні концерти для збору коштів.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="column col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+                    <div class="s-info__heading-wrap --relative d-none d-md-inline-block">
+                        <h4 class="text-bold text-xl block-info__heading">Чого<br>
+                            ми прагнем</h4>
 
+                        <img src="assets/img/logo-large.svg" class="decor__right" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row align-center align-middle --relative s-info__row">
+                <div class="col-xl-8 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="--relative d-inline-block d-md-none">
+                        <h3 class="s-info__heading text-bold text-xl">Наша мета</h3>
+                    </div>
+
+                    <div class="s-info__desc editor-style">
+                        <p>Відповідно до Указу Президента України № 850/2022 про нагородження нагрудним знаком
+                            Президента
+                            України <b>«Золоте серце»</b> за вагомий особистий внесок у надання волонтерської допомоги
+                            та розвиток
+                            волонтерського руху, зокрема під час здійснення заходів щодо забезпечення оборони України,
+                            захисту безпеки населення та інтересів держави у зв'язку з військовою агресією росії проти
+                            України та подолання її наслідків постановлено:</p>
+                        <p> До нагородження відзнакою Президента України
+                            «Золоте серце» Романа Гринкевича волонтера та директора благодійної організації «Благодійний
+                            фонд «НOPE UA»</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xs-12 --relative">
+                    <div class="s-info__heading-wrap --relative d-none d-md-inline-block">
+                        <h4 class="s-info__heading text-bold text-xl block-info__heading overlap"> Наша
+                            мета</h4>
+                        <img src="assets/img/events-3.png"
+                             class="decor__right" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 </main>
 
 <footer class="footer">
