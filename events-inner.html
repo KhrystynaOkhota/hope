@@ -344,7 +344,6 @@
         </div>
     </section>
 
-
     <section class="section s-about s-results--home s-statistic">
         <div class="container">
             <div class="row m-row">
@@ -434,7 +433,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="section s-partner">
         <div class="container">
@@ -546,6 +544,15 @@
             </div>
         </div>
     </section>
+
+
+    <div class="input-file-container">
+        <form>
+            <div>
+                <input type="file">
+            </div>
+        </form>
+    </div>
 
 </main>
 
@@ -718,8 +725,13 @@
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-control">
-                                <label for="status" class="form-control__label">Загрузити довiдку</label>
-                                <input type="file">
+                                <label for="status" class="form-control__label">Довідка ВПО або інші документи, які
+                                    підтверджують статус</label>
+                                <div class="file-container d-flex align-middle align-left">
+                                    <input type="file" accept="image/*,.pdf">
+                                    <button class="file-button">Добавити файл</button>
+                                    <span class="file-name">pdf, jpeg, png</span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -734,7 +746,15 @@
     </div>
 </div>
 
-
+<script>
+    document.querySelectorAll('.file-container').forEach(function (item) {
+        item.children[0].addEventListener('change', function () {
+            console.log(item);
+            const splitFileName = this.value.split(/\\/);
+            item.children[2].innerText = splitFileName[splitFileName.length - 1];
+        });
+    });
+</script>
 <script src="./assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.sumoselect.min.js"></script>
